@@ -1,4 +1,5 @@
 def encrypt(key,plaintext):
+    print(plaintext + ":")
     ciphertext=""
     #YOUR CODE HERE
     for i in range(len(plaintext)) :
@@ -8,6 +9,7 @@ def encrypt(key,plaintext):
     return ciphertext
 
 def decrypt(key,ciphertext):
+    print(ciphertext + ":")
     plaintext=""
     #YOUR CODE HERE
     for i in range(len(ciphertext)) :
