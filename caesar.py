@@ -1,21 +1,21 @@
 def encrypt(key,plaintext):
-    print(plaintext + ":")
+    #print(plaintext + ":")
     ciphertext=""
     #YOUR CODE HERE
     for i in range(len(plaintext)) :
         char = plaintext[i]
         ciphertext += chr((ord(char) + key - 65) % 26 + 65)
-    print(ciphertext)
+    #print(ciphertext)
     return ciphertext
 
 def decrypt(key,ciphertext):
-    print(ciphertext + ":")
+    #print(ciphertext + ":")
     plaintext=""
     #YOUR CODE HERE
     for i in range(len(ciphertext)) :
         char = ciphertext[i]
         plaintext += chr((ord(char) - key - 65) % 26 + 65)
-    print(plaintext)
+    #print(plaintext)
     return plaintext
 
 
